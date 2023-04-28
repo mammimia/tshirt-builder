@@ -49,7 +49,19 @@ const Customizer = () => {
     if (!prompt) return alert('Please enter a prompt');
 
     try {
-      // Call backend
+      setGeneratingImg(true);
+      const response = await fetch(`${config.development.backendUrl}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          prompt
+        })
+      });
+
+      const data = await response.json();
+      handleDecals(type, 'data:image/png;base64,' + data.photo);
     } catch (err) {
       alert('Something went wrong, please try again', err);
     } finally {
