@@ -1,7 +1,7 @@
 # T-Shirt Builder
 
 This is a T-Shirt Builder
- project. It was developed for learning purposes.
+project. It was developed for learning purposes.
 
 ## Tech Stack
 
@@ -10,6 +10,36 @@ This is a T-Shirt Builder
 - Framer Motion
 - Valtio
 - Tailwind
+- Express
+- OpenAI
+
+## Installation
+
+To install client project follow the steps after cloning.
+
+```bash
+  cd client
+  npm install
+```
+
+Then to start client app
+
+```bash
+  npm run dev
+```
+
+To install server project follow the steps after cloning.
+
+```bash
+  cd ../server
+  npm install
+```
+
+Then to start server app
+
+```bash
+  npm start
+```
 
 ## 🔗 Links
 
