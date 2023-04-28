@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSnapshot } from 'valtio';
 
-import state from '../store/Store';
+import state from '../store/store';
 
 import {
   headContainerAnimation,

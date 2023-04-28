@@ -3,7 +3,7 @@ import { easing } from 'maath';
 import React, { useRef } from 'react';
 import { useSnapshot } from 'valtio';
 
-import state from '../store/Store';
+import state from '../store/store';
 
 const CameraRig = ({ children }) => {
   const group = useRef();
